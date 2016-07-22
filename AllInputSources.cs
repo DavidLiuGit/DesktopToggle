@@ -31,8 +31,18 @@ namespace InputTrackingExample
         /// </summary>
         /// <param name="last">DateTime struct of last input</param>
         /// <returns></returns>
-        public TimeSpan getDiff(DateTime last) {
+        public TimeSpan getDiffTimeSpan(DateTime last) {
             return (DateTime.Now - last);
+        }
+
+
+        /// <summary>
+        /// Returns the amount of time since the last input was received, in milliseconds
+        /// </summary>
+        /// <param name="last">DateTime struct of last input</param>
+        /// <returns></returns>
+        public double getDiffMilliseconds (DateTime last) {
+            return (DateTime.Now - last).TotalMilliseconds;
         }
     }
 }
