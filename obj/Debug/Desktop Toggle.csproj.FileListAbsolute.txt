@@ -1,0 +1,16 @@
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\bin\Debug\Desktop Toggle.exe.config
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\bin\Debug\Desktop Toggle.exe
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\bin\Debug\Desktop Toggle.pdb
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop Toggle.csprojResolveAssemblyReference.cache
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Interop.Shell32.dll
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop Toggle.csproj.ResolveComReference.cache
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\MainWindow.g.cs
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\App.g.cs
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop Toggle_MarkupCompile.cache
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop Toggle_MarkupCompile.lref
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\MainWindow.baml
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop Toggle.g.resources
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop_Toggle.Properties.Resources.resources
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop Toggle.csproj.GenerateResource.Cache
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop Toggle.exe
+D:\Dropbox\PC\Desktop Toggle\Desktop Toggle\obj\Debug\Desktop Toggle.pdb
