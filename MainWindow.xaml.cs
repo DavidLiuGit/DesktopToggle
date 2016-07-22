@@ -23,6 +23,8 @@ namespace Desktop_Toggle {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
+        private AllInputSources lastInput;
+
         public MainWindow() {
             InitializeComponent();
         }
@@ -91,9 +93,15 @@ namespace Desktop_Toggle {
         /// <param name="time">time delay, in milliseconds</param>
         /// <param name="objShel">instance of shell that will perform the desktop toggle</param>
         private void delay(int time, Shell32.Shell objShel) {
+            
+            // initialize class AllInputSources, which contains methods for getting time since last input
+            lastInput = new AllInputSources();
 
-            // wait
-            Thread.Sleep(time);
+            // check if time-since-lastInput is greater than the specified time delay; continuously check if not
+            while (lastInput.getDiffMilliseconds(lastInput.GetLastInputTime()) < time) {
+                // wait 1 second before polling again
+                Thread.Sleep(1000);
+            }            
 
             // Show the desktop
             ((Shell32.IShellDispatch4)objShel).ToggleDesktop();

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace InputTrackingExample
+namespace Desktop_Toggle
 {
     public class AllInputSources
     {
