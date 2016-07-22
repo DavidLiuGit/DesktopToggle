@@ -14,49 +14,13 @@
         <Button x:Name="desktopButton" Content="Show desktop" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="366" Height="46" FontFamily="Roboto Light" FontSize="22" Click="button_Click" Grid.ColumnSpan="2" Background="White"/>
         <TextBox x:Name="timeTextbox" HorizontalAlignment="Left" Height="46" Margin="10,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" FontFamily="Roboto Light" FontSize="25" Grid.ColumnSpan="2"/>
         <Button x:Name="setTimerButton" Content="Set Timer" HorizontalAlignment="Left" Margin="26.529,67,0,0" VerticalAlignment="Top" Width="267" Height="46" FontSize="22" FontFamily="Roboto Light" Click="setTimerButton_Click" Grid.Column="1" Background="White"/>
-        <RadioButton x:Name="minRadio" Content="Minutes" HorizontalAlignment="Left" Margin="31,126,0,0" VerticalAlignment="Top" GroupName="timeUnit" IsChecked="True" FontFamily="Roboto Light" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
-            <RadioButton.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </RadioButton.RenderTransform>
-        </RadioButton>
-        <RadioButton x:Name="secRadio" Content="Seconds" HorizontalAlignment="Left" Margin="32,150,0,0" VerticalAlignment="Top" GroupName="timeUnit" FontFamily="Roboto Light" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
-            <RadioButton.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </RadioButton.RenderTransform>
-        </RadioButton>
+        <RadioButton x:Name="minRadio" Content="Minutes" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" GroupName="timeUnit" IsChecked="True" FontFamily="Roboto Light" RenderTransformOrigin="0.5,0.5"/>
+        <RadioButton x:Name="secRadio" Content="Seconds" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" GroupName="timeUnit" FontFamily="Roboto Light" RenderTransformOrigin="0.5,0.5"/>
         <Label x:Name="statusLabel" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Width="366" Height="46" FontSize="22" FontFamily="Roboto Light" Grid.ColumnSpan="2">
             <Label x:Name="label" Content="Ready" IsEnabled="False"/>
         </Label>
-        <CheckBox x:Name="restoreCheck" Content="Restore" HorizontalAlignment="Left" Margin="30,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Roboto Light" Grid.ColumnSpan="2">
-            <CheckBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </CheckBox.RenderTransform>
-        </CheckBox>
-        <CheckBox x:Name="startupCheck" Content="Start with Windows" Grid.Column="1" HorizontalAlignment="Left" Margin="138,127,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Roboto Light">
-            <CheckBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </CheckBox.RenderTransform>
-        </CheckBox>
+        <CheckBox x:Name="restoreCheck" Content="Restore on input" HorizontalAlignment="Left" Margin="116,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Roboto Light" Grid.Column="1"/>
+        <CheckBox x:Name="startupCheck" Content="Start with Windows" HorizontalAlignment="Left" Margin="116,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Roboto Light" Grid.Column="1"/>
 
     </Grid>
 </Window>

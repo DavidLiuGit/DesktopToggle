@@ -98,7 +98,7 @@ namespace Desktop_Toggle {
             lastInput = new AllInputSources();
 
             // check if time-since-lastInput is greater than the specified time delay; continuously check if not
-            while (lastInput.getDiffMilliseconds(lastInput.GetLastInputTime()) < time) {
+            while (lastInput.getDiffMilliseconds(lastInput.GetLastInputTime()) <= time) {
                 // wait 1 second before polling again
                 Thread.Sleep(1000);
             }            
