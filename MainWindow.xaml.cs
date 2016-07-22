@@ -17,6 +17,7 @@ using System.Windows.Shapes;
 using Shell32;
 using System.Threading;
 
+
 namespace Desktop_Toggle {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -43,7 +44,7 @@ namespace Desktop_Toggle {
         private void setTimerButton_Click(object sender, RoutedEventArgs e) {
             delay_toggle();
         }
-
+        
 
         private void delay_toggle() {
 
@@ -76,11 +77,19 @@ namespace Desktop_Toggle {
             Thread beginDelay = new Thread( () => delay(time, objShel) );
             beginDelay.Start();
 
+            // update status
             statusLabel.Content = "Timer set.";
             statusLabel.Foreground = Brushes.Green;
         }
 
+
+        /// <summary>
+        /// Toggle desktop after x milliseconds of delay
+        /// </summary>
+        /// <param name="time">time delay, in milliseconds</param>
+        /// <param name="objShel">instance of shell that will perform the desktop toggle</param>
         private void delay(int time, Shell32.Shell objShel) {
+
             // wait
             Thread.Sleep(time);
 
