@@ -69,11 +69,23 @@ namespace Desktop_Toggle {
             // convert seconds to milliseconds
             time *= 1000;
 
+            // Create an instance of the shell class
+            Shell32.Shell objShel = new Shell32.Shell();
+
+            // create a separate thread for delay
+            Thread beginDelay = new Thread( () => delay(time, objShel) );
+            beginDelay.Start();
+
+            statusLabel.Content = "Timer set.";
+            statusLabel.Foreground = Brushes.Green;
+        }
+
+        private void delay(int time, Shell32.Shell objShel) {
             // wait
             Thread.Sleep(time);
 
-            // call toggle desktop
-            toggle_desktop_logic();
+            // Show the desktop
+            ((Shell32.IShellDispatch4)objShel).ToggleDesktop();
         }
     }
 }
