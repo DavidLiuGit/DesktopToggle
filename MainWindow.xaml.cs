@@ -45,7 +45,10 @@ namespace Desktop_Toggle {
             delay_toggle();
         }
         
-
+        
+        /// <summary>
+        /// Logic for setting desktop toggle delay
+        /// </summary>
         private void delay_toggle() {
 
             // get string from timeTextbox
@@ -56,16 +59,15 @@ namespace Desktop_Toggle {
             try {
                 time = Int32.Parse(timeString);
             }
-            catch (FormatException e) {         // if invalid input (i.e. not numbers)
+            catch (FormatException e) {         // if invalid input (i.e. not numbers), display the error
                 statusLabel.Content = "Invalid time entered. Please try again";
                 statusLabel.Foreground = Brushes.Red;
                 return;
             }
 
             // if the user selects their units in minutes, multiply it by 60 (to convert to seconds)
-            if (minRadio.IsChecked == true) {
-                time *= 60;
-            }
+            if (minRadio.IsChecked == true) 
+                time *= 60;            
 
             // convert seconds to milliseconds
             time *= 1000;
